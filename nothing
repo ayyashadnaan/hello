@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	int t;
+	cin >> t;
+	while (t--)
+	{
+		long long int a, b;
+		cin >> a >> b;
+		if (a > b)
+		{
+			int x = a % b;
+			if (x == 0)
+				cout << 0 << endl;
+			else
+			{
+				int y = b - x;
+				cout << abs(y) << endl;
+			}
+		}
+		else if (b > a)
+		{
+			cout << abs(b - a) << endl;
+		}
+		else
+			cout << 0 << endl;
+	}
+}
